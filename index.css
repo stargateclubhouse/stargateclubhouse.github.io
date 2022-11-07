@@ -1,0 +1,467 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #1a1a1a;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  bottom: 0%;
+  position: absolute;
+}
+
+/* Logo Image */
+.Logo-img {
+  position: relative;
+  background: transparent;
+  width: 100%;
+}
+
+.Logo-img img {
+  width: 100%;
+  background: transparent;
+  z-index: -1;
+  background: none;
+  padding: 0px 10px 0px 10px;
+
+}
+
+/* Social Media Icons */
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  padding: 0.5vw 0px 0.5vw 0px;
+  font-size: xx-large;
+}
+
+#tktk {
+  color: #fffcfc;
+}
+
+#twtr {
+  color: #49a1eb;
+}
+
+#inst {
+  color: #DD2A7B;
+
+}
+
+#tktk,
+#inst,
+#twtr {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+#tktk:hover,
+#inst:hover,
+#twtr:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0px 10px 10px 10px;
+}
+
+.btns button {
+
+
+  width: 7rem;
+  padding: 6px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  transition: all 1s;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.btns button:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+
+/* Draggable Objects */
+.draggable-imgs img:not(#body, #shoes) {
+  position: absolute;
+  cursor: move;
+  background: none;
+  z-index: 9;
+}
+
+.header {
+  width: 100%;
+}
+
+#pant {
+  width: 8.5%;
+  height: auto;
+  top: 20%;
+  left: 20%;
+}
+
+#short {
+  width: 8.5%;
+  height: auto;
+  top: 10%;
+  left: 6%;
+}
+
+#skirt {
+  width: 8.5%;
+  height: auto;
+  top: 20%;
+  left: 70%;
+}
+
+#hat {
+  width: 3.7%;
+  height: auto;
+  top: 5%;
+  left: 31%;
+}
+
+#hat_velvet {
+  width: 4%;
+  height: auto;
+  top: 5%;
+  left: 65%;
+}
+
+#body {
+  left: 45.5%;
+  top: 2%;
+  z-index: 1;
+  width: 9%;
+  height: auto;
+  position: absolute;
+  background: none;
+
+}
+
+#shirt {
+  width: 10%;
+  height: auto;
+  top: 10%;
+  left: 85%;
+}
+
+#shoes {
+  width: 7.5%;
+  height: auto;
+  position: absolute;
+  cursor: move;
+  background: none;
+  z-index: 1;
+  top: 30%;
+  left: 35%;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 798px) and (max-width: 992px) {
+
+  #pant {
+    width: 15.3%;
+    top: 27%;
+    left: 14%;
+  }
+
+  #short {
+    width: 15.3%;
+    top: 15%;
+    left: 14%;
+  }
+
+  #skirt {
+    width: 15.3%;
+    top: 30%;
+    left: 72%;
+  }
+
+  #hat {
+    width: 6.66%;
+  }
+
+  #hat_velvet {
+    width: 7.2%;
+  }
+
+  #body {
+    top: 10%;
+    left: 41.9%;
+    width: 16.2%;
+  }
+
+  #shirt {
+    width: 18%;
+    top: 12%;
+    left: 71.5%;
+  }
+
+  #shoes {
+    width: 13.5%;
+    top: 55%;
+    left: 15%;
+  }
+
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 798px) {
+
+  /* x1.3 */
+  #pant {
+    width: 19.89%;
+    top: 30%;
+    left: 12%;
+  }
+
+  #short {
+    /* 15.3% */
+    width: 19.89%;
+    top: 15%;
+    left: 12%;
+  }
+
+  #skirt {
+    width: 19.89%;
+    top: 35%;
+    left: 72%;
+  }
+
+  #hat {
+    /* 6.66% */
+    width: 8.658%;
+  }
+
+  #hat_velvet {
+    /* 7.2% */
+    width: 9.36%;
+  }
+
+  #body {
+    top: 10%;
+    /* 16.2% */
+    width: 21.06%;
+    left: 39.47%;
+  }
+
+  #shirt {
+    /* 18% */
+    width: 23.4%;
+    top: 12%;
+    left: 71.5%;
+  }
+
+  #shoes {
+    /* 13.5% */
+    width: 17.55%;
+    top: 62%;
+    left: 13%;
+  }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+  /*x1.5*/
+  #pant {
+    width: 29.835%;
+    top: 33%;
+    left: 3%;
+  }
+
+  #short {
+    /* 19.89% */
+    width: 29.835%;
+    top: 15%;
+    left: 3%;
+  }
+
+  #skirt {
+    width: 29.835%;
+    top: 34%;
+    left: 67.165%;
+  }
+
+  #hat {
+    /* 8.658% */
+    width: 12.987%;
+    top: 5%;
+    left: 20%;
+  }
+
+  #hat_velvet {
+    /* 9.36% */
+    width: 14.04%;
+    top: 5%;
+    left: 66%;
+  }
+
+  #body {
+    top: 10%;
+    left: 34.205%;
+    /* 21.06% */
+    width: 31.59%;
+    height: auto;
+
+  }
+
+  #shirt {
+    /* 23.4% */
+    width: 35.1%;
+    top: 12%;
+    left: 61.9%;
+  }
+
+  #shoes {
+    /* 17.55% */
+    width: 26.325%;
+    top: 70%;
+    left: 37.325%;
+  }
+
+
+}
+
+
+/* -----------------------------SEX XELECTOR SWITCH CSS-------------------- */
+
+
+/* .switch {
+    margin-left: 47%;
+    position: relative;
+    display: inline-block;
+    width: 5%;
+    height: 34px;
+    display: none;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+} */
+
+
+/*------------------------------------------ MODAL----------------------------------------------------- */
+.modal {
+
+  /* overflow: hidden; */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  overflow: hidden;
+  color: #f1f1f1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  height: auto;
+}
+
+.modal-content .close:hover {
+  color: #fefefe;
+}
+
+.modal-content h2 {
+  display: block;
+}
+
+.modal-content p {
+  display: block;
+  padding: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
